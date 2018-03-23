@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26330",
 "files": {
+	"\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitattributes",
+		"oF": 0
+		},
 	"\/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -358,86 +365,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/assets\/js\/base-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/base-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/base.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/base-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/customizer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/customizer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/MyFontsWebfontsKit-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/MyFontsWebfontsKit-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/MyFontsWebfontsKit.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/MyFontsWebfontsKit-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/navigation.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/navigation-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/parallax.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/parallax-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/skip-link-focus-fix.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/skip-link-focus-fix-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"\/assets\/scss\/base\/_base-styles.scss": {
 		"aP": 0,
@@ -1050,19 +977,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/scss\/site\/_content.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/scss\/site\/_content.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/assets\/scss\/site\/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1072,19 +986,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/site\/_footer.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/scss\/site\/_header.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/scss\/site\/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1845,20 +1746,6 @@
 		"oAP": "\/languages\/readme.txt",
 		"oF": 0
 		},
-	"\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/LICENSE",
-		"oF": 0
-		},
-	"\/memberpress\/account\/nav.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/memberpress\/account\/nav.php",
-		"oF": 0
-		},
 	"\/memberpress\/account\/payments.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1892,6 +1779,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-enrol.php",
+		"oF": 0
+		},
+	"\/page-new-account.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-new-account.php",
 		"oF": 0
 		},
 	"\/page-new-student.php": {
@@ -2004,13 +1898,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content-downloads.php",
-		"oF": 0
-		},
-	"\/template-parts\/content-enroll-new.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/template-parts\/content-enroll-new.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-enroll.php": {

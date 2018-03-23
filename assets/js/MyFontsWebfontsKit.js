@@ -40,7 +40,7 @@
 var woffEnabled = false;
 //to place your webfonts in a custom directory 
 //uncomment this and set it to where your webfonts are.
-var customPath = "/wp-content/themes/summerschool/assets";
+var customPath = "/wp-content/themes/malvern/assets";
 
 var protocol=document.location.protocol;"https:"!=protocol&&(protocol="http:");var count=document.createElement("script");count.type="text/javascript";count.async=!0;count.src=protocol+"/count/35dbb0";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(count,s);var browserName,browserVersion,webfontType;if("undefined"==typeof woffEnabled)var woffEnabled=!0;var svgEnabled=0,woff2Enabled=0;
 if("undefined"!=typeof customPath)var path=customPath;else{var scripts=document.getElementsByTagName("SCRIPT"),script=scripts[scripts.length-1].src;script.match("://")||"/"==script.charAt(0)||(script="./"+script);path=script.replace(/\\/g,"/").replace(/\/[^\/]*\/?$/,"")}
