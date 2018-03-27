@@ -39,9 +39,5 @@ get_header(); ?>
 		</main>
 	</div>
 
-	<?php get_template_part( 'template-parts/get', 'tweets' ); ?>
-
-	<?php get_template_part( 'template-parts/get', 'quicklink' ); ?>
-
 <?php
 get_footer();

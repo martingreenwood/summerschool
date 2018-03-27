@@ -211,37 +211,24 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/img\/bottom-strip-home.png": {
-		"ft": 32768,
-		"iS": 59893,
+	"\/assets\/img\/aljw-signature.jpg": {
+		"ft": 16384,
+		"iS": 2015,
 		"oA": 0,
-		"oAP": "\/assets\/img\/bottom-strip-home.png",
+		"oAP": "\/assets\/img\/aljw-signature.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/bottom-strip-old.png": {
-		"ft": 32768,
-		"iS": 36363,
+	"\/assets\/img\/allan-feature-pod.jpg": {
+		"ft": 16384,
+		"iS": 20219,
 		"oA": 0,
-		"oAP": "\/assets\/img\/bottom-strip-old.png",
+		"oAP": "\/assets\/img\/allan-feature-pod.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/assets\/img\/bottom-strip.png": {
-		"ft": 32768,
-		"iS": 39467,
-		"oA": 0,
-		"oAP": "\/assets\/img\/bottom-strip.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/img\/down-chevron.svg": {
@@ -254,39 +241,28 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/img\/homepage-bg-old.jpg": {
-		"ft": 16384,
-		"iS": 161705,
+	"\/assets\/img\/home-blurb-bg.png": {
+		"ft": 32768,
+		"iS": 422246,
 		"oA": 0,
-		"oAP": "\/assets\/img\/homepage-bg-old.jpg",
+		"oAP": "\/assets\/img\/home-blurb-bg.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/homepage-bg.jpg": {
-		"ft": 16384,
-		"iS": 128276,
+	"\/assets\/img\/home-splash-left.gif": {
+		"ft": 4194304,
+		"iS": 72036,
 		"oA": 0,
-		"oAP": "\/assets\/img\/homepage-bg.jpg",
+		"oAP": "\/assets\/img\/home-splash-left.gif",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/inner-bg-old.jpg": {
-		"ft": 16384,
-		"iS": 1102168,
-		"oA": 0,
-		"oAP": "\/assets\/img\/inner-bg-old.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/assets\/img\/inner-bg.jpg": {
 		"ft": 16384,
-		"iS": 113490,
+		"iS": 1845256,
 		"oA": 0,
 		"oAP": "\/assets\/img\/inner-bg.jpg",
 		"oF": 0,
@@ -294,42 +270,22 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/left-chevron.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/left-chevron.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/logo-wide.png": {
+	"\/assets\/img\/inner-blurb-bg.png": {
 		"ft": 32768,
-		"iS": 186842,
+		"iS": 440185,
 		"oA": 0,
-		"oAP": "\/assets\/img\/logo-wide.png",
+		"oAP": "\/assets\/img\/inner-blurb-bg.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/logo-wide.svg": {
+	"\/assets\/img\/left-chevron.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/assets\/img\/logo-wide.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/logo.svg",
+		"oAP": "\/assets\/img\/left-chevron.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -345,6 +301,44 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/splash-bottom.gif": {
+		"ft": 4194304,
+		"iS": 71709,
+		"oA": 0,
+		"oAP": "\/assets\/img\/splash-bottom.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/splash-right.gif": {
+		"ft": 4194304,
+		"iS": 72091,
+		"oA": 0,
+		"oAP": "\/assets\/img\/splash-right.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/top-left.png": {
+		"ft": 32768,
+		"iS": 258026,
+		"oA": 0,
+		"oAP": "\/assets\/img\/top-left.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/top-right.png": {
+		"ft": 32768,
+		"iS": 453601,
+		"oA": 0,
+		"oAP": "\/assets\/img\/top-right.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/top-strip.png": {
 		"ft": 32768,
 		"iS": 35643,
@@ -356,15 +350,85 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/Untitled-1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/Untitled-1.svg",
+	"\/assets\/js\/base-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/base-min-min.js",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/base.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/base-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/customizer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/customizer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/MyFontsWebfontsKit-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/MyFontsWebfontsKit-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/MyFontsWebfontsKit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/MyFontsWebfontsKit-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/navigation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/navigation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/parallax.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/parallax-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/skip-link-focus-fix.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/skip-link-focus-fix-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/scss\/base\/_base-styles.scss": {
 		"aP": 0,
@@ -977,6 +1041,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/scss\/site\/_content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/site\/_content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/scss\/site\/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -986,6 +1063,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/site\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/scss\/site\/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/site\/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1746,6 +1836,13 @@
 		"oAP": "\/languages\/readme.txt",
 		"oF": 0
 		},
+	"\/memberpress\/account\/nav.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/memberpress\/account\/nav.php",
+		"oF": 0
+		},
 	"\/memberpress\/account\/payments.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1793,6 +1890,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-new-student.php",
+		"oF": 0
+		},
+	"\/page-our-courses.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-our-courses.php",
 		"oF": 0
 		},
 	"\/page-our-team.php": {
@@ -1900,11 +2004,25 @@
 		"oAP": "\/template-parts\/content-downloads.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-enroll-new.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-enroll-new.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-enroll.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content-enroll.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-home.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-login.php": {

@@ -156,19 +156,6 @@ get_header(); ?>
 			endif;
 			?>
 
-			<div class="container" style="margin-top: 60px;">
-
-				<div class="row">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-3',
-							'menu_id'        => 'course-menu',
-						) );
-					?>
-				</div>
-
-			</div>
-
 		</main>
 	</div>
 

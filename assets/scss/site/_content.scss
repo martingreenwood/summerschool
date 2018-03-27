@@ -53,101 +53,53 @@
 }
 
 #content {
-	background-color: $light-grey;
+	background-color: white;
 }
 
 #primary {
 	padding: 60px 0;
 }
 
-#signup {
-	background-color: white;
-	padding: 60px 0;
-
-	.mc-field-group {
-		display: inline-block;
-		width: 78%;
-		float: left;
-		margin-right: 2%;
-
-		input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
-			width: 100%;
-			border-color: #eeeeee;
-			border-radius: 0;
-		}
-	}
-
-	.mc-button-group {
-		display: inline-block;
-		widows: 20%;
-		float: left;
-
-		input[type="submit"], input[type="reset"], input[type="button"] {
-			widows: 100%;
-			background: $secondary-color;
-			color: white;
-			font-size: inherit;
-			border-color: $secondary-color;
-			border-radius: 0;
-
-			&:hover, &:focus, &:active {
-				background: $secondary-color;
-				color: white;
-				border-color: $secondary-color;
-			}
-		}
-	}
+.menu-courses-container {
+	border-top: 1px solid $deep-green;
+	border-bottom: 1px solid $deep-green;
+	padding: 20px 0;
 }
 
-#quicklink {
-	padding: 60px 0;
-	background-color: $secondary-color;
+#course-menu {
+	display: table;
+	margin: 0;
+	list-style: none;
+	width: 100%;
 
-	.links {
-		list-style: none;
-		margin: 0;
+	li {
+		display: block;
+		margin-bottom: 10px;
+		float: left;
+		width: 100%;
 
-		li {
-			margin: 0;
-			float: left;
-			width: 50%;
-			margin-bottom: 30px;
-			vertical-align: top;
+		@media (#{$bp-larger-than-phablet}) {
+			margin-bottom: 0;
+			width: 49%;
+		}
+
+		a {
+			display: block;
+			padding: 10px 40px;
+			text-transform: uppercase;
 			text-align: center;
+			background-color: $secondary-color;
+			color: white;
+			text-decoration: none;
+			box--sizing: border-box;
+		}
 
-			@media (#{$bp-larger-than-desktop}) {
-				width: 16.666%;
-				margin-bottom: 0;
-			}
+		&:last-of-type {
+			margin-bottom: 0;
+			float: right;
 
 			a {
-				text-decoration: none;
-			}
-
-			.icon {
-				display: inline-block;
-				width: 140px;
-				height: 140px;
-				margin-bottom: 20px;
-				background-size: auto 78px;
-				background-repeat: no-repeat;
-				background-position: center;
-				border: 2px solid white;
-				border-radius: 50%;
-			}
-
-			h3, {
-				display: block;
-				font-size: 20px;
-				color: white;
-			}
-
-			.outline {
-				border: 2px solid white;
-				color: white;
-				padding: 7px 15px;
-				text-transform: uppercase;
-				display: inline-block;
+				background-color: $primary-color;
 			}
 		}
 	}
@@ -159,17 +111,13 @@
 
 .home {
 
-	#primary {
-		text-align: center;
-		background-color: $light-grey;
-	}
-
 	#banner {
-		height: 100vh;
+		height: 80vh;
 
 		.blurb {
 			
 			.after {
+
 			}
 		}
 	}
@@ -210,43 +158,6 @@
 
 		.slick-next {
 			background-image: url(assets/img/right-chevron.svg);
-		}
-	}
-
-	.menu-course-container {
-		padding-bottom: 60px;
-		border-bottom: 2px solid $primary-color;
-	}
-
-	#course-menu {
-		display: inline-block;
-		margin: 0;
-		list-style: none;
-
-		li {
-			display: inline-block;
-			margin: 0 10px;
-			margin-bottom: 10px;
-
-			@media (#{$bp-larger-than-phablet}) {
-				margin-bottom: 0;
-			}
-
-			a {
-				display: inline-block;
-				padding: 10px 40px;
-				text-transform: uppercase;
-				background-color: $secondary-color;
-				color: white;
-				text-decoration: none;
-			}
-
-			&:last-of-type {
-
-				a {
-					background-color: $primary-color;
-				}
-			}
 		}
 	}
 }
@@ -312,8 +223,12 @@
 
 .page {
 
-	#primary {
+	article {
 		text-align: center;
+
+		h1 {
+			color: $secondary-color;
+		}
 	}
 
 	.maincopy {
@@ -371,6 +286,19 @@
 	&.our-team {
 
 		.sections {
+
+			.wrapper {
+				margin-bottom: 40px;
+
+				&:nth-child(even) {
+					background-color: $light-grey;
+					padding: 40px 0;
+				}
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
 
 			&.support-staff {
 				background: $primary-color;

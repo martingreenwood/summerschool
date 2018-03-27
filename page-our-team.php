@@ -25,7 +25,6 @@ get_header(); ?>
 			<?php endif ?>
 
 			<div class="sections">
-				<div class="container">
 				<?php
 				$args = array( 
 					'post_type' => 'team', 
@@ -37,6 +36,8 @@ get_header(); ?>
 					?>
 
 					<?php if ($loop->current_post % 2 == 0): ?>
+					<div class="wrapper">
+					<div class="container">
 					<div class="row">
 						<div class="element columns eight whois">
 							<div class="avatar"><?php the_post_thumbnail( 'full' ) ?></div>
@@ -48,7 +49,11 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'full' ) ?>
 						</div>
 					</div>
+					</div>
+					</div>
 					<?php else: ?>
+					<div class="wrapper">
+					<div class="container">
 					<div class="row">
 						<div class="element columns four image">
 							<?php the_post_thumbnail( 'full' ) ?>
@@ -59,6 +64,8 @@ get_header(); ?>
 							<h3><?php the_field( 'position' ); ?></h3>
 							<?php the_content(); ?>
 						</div>
+					</div>
+					</div>
 					</div>
 					<?php endif ?>
 					
@@ -76,6 +83,7 @@ get_header(); ?>
 					<div class="maincopy">
 						<?php the_field( 'support_content' ); ?>
 					</div>
+				</div>
 				<?php
 				$args = array( 
 					'post_type' => 'team', 
@@ -87,6 +95,8 @@ get_header(); ?>
 					?>
 
 					<?php if ($loop->current_post % 2 == 0): ?>
+					<div class="wrapper">
+					<div class="container">
 					<div class="row">
 						<div class="element columns eight whois">
 							<div class="avatar"><?php the_post_thumbnail( 'full' ) ?></div>
@@ -98,7 +108,11 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'full' ) ?>
 						</div>
 					</div>
+					</div>
+					</div>
 					<?php else: ?>
+					<div class="wrapper">
+					<div class="container">
 					<div class="row">
 						<div class="element columns four image">
 							<?php the_post_thumbnail( 'full' ) ?>
@@ -109,6 +123,8 @@ get_header(); ?>
 							<h3><?php the_field( 'position' ); ?></h3>
 							<?php the_content(); ?>
 						</div>
+					</div>
+					</div>
 					</div>
 					<?php endif; ?>
 
@@ -120,6 +136,19 @@ get_header(); ?>
 				</div>
 			</div>
 			<?php endif; ?>
+
+			<div class="container" style="margin-top: 60px;">
+
+				<div class="row">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-3',
+							'menu_id'        => 'course-menu',
+						) );
+					?>
+				</div>
+
+			</div>
 
 		</main>
 	</div>

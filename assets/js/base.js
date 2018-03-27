@@ -20,6 +20,7 @@
     $('.hamburger').on('click', function(event) {
     	event.preventDefault();
     	$(this).toggleClass('is-active');
+    	$('body').toggleClass('no-scroll');
     });
 	
 })(jQuery);
@@ -34,57 +35,6 @@
 	
 })(jQuery);
 
-/*===================================
-=            SCG REPLACE            =
-===================================*/
-
-// (function($){
-
-//     $('img[src$=".svg"]').each(function() {
-//         var $img = jQuery(this);
-//         var imgURL = $img.attr('src');
-//         var attributes = $img.prop("attributes");
-
-//         $.get(imgURL, function(data) {
-//             // Get the SVG tag, ignore the rest
-//             var $svg = jQuery(data).find('svg');
-
-//             // Remove any invalid XML tags
-//             $svg = $svg.removeAttr('xmlns:a');
-
-//             // Loop through IMG attributes and apply on SVG
-//             $.each(attributes, function() {
-//                 $svg.attr(this.name, this.value);
-//             });
-
-//             // Replace IMG with SVG
-//             $img.replaceWith($svg);
-//         }, 'xml');
-//     });
-	
-// })(jQuery);
-
-/*==============================
-=            LOADER            =
-==============================*/
-
-
-/*===============================
-=            HEADER             =
-===============================*/
-
-// (function($) {
-
-// 	var $document = $(document),
-// 	$element = $('#masthead'),
-// 	className = 'scrolled';
-
-// 	$document.scroll(function() {
-// 		$element.toggleClass(className, $document.scrollTop() >= 10);
-// 	});
-
-// })(jQuery);
-
 /*===============================
 =            HEADER             =
 ===============================*/
@@ -96,12 +46,12 @@
 	header = $('#masthead');
 
 	$document.scroll(function() {
-		$element.toggleClass('hidden', $document.scrollTop() >= 99);
+		$element.toggleClass('hidden', $document.scrollTop() >= 241);
 	});
 
 	$document.scroll(function() {
 		//$element.toggleClass('fixed', $document.scrollTop() >= $(window).height());
-		$element.toggleClass('fixed', $document.scrollTop() >= 400);
+		$element.toggleClass('fixed', $document.scrollTop() >= 600);
 	});
 
 })(jQuery);
@@ -110,14 +60,14 @@
 =            BANNER             =
 ===============================*/
 
-(function($) {
+// (function($) {
 
-	$('#banner .table').each(function(){
-		var headerHeight = $('#masthead').height();
-		$(this).css('padding-top', headerHeight+'px');
-	});
+// 	$('#banner .blurb').each(function(){
+// 		var headerHeight = $('#masthead').height();
+// 		$(this).css('top', headerHeight+'px');
+// 	});
 
-})(jQuery);
+// })(jQuery);
 
 /*===============================
 =            SLICK             =

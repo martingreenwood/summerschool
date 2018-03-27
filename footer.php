@@ -13,16 +13,18 @@
 
 	</div><!-- #content -->
 
-	<?php get_template_part( 'template-parts/get', 'signup' ); ?>
-
 	<section id="prefooter">
+		<div class="before">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/splash-bottom.gif" alt="Light Green brush stroke">
+		</div>
 
 		<div class="container">
 			<div class="row">
 
 				<div class="four columns company-info">
-					
-					<?php the_custom_logo(); ?>
+
+					<?php $logo = get_field( 'logo', 'options' ); ?>
+					<img src="<?php echo $logo['url']; ?>" alt="">
 
 					<?php the_field( 'company_info', 'options' ); ?>
 
@@ -61,31 +63,53 @@
 				</div>
 
 				<div class="eight columns latest-news">
-					<h2>Latest News</h2>
-					
-					<div class="stories">
-						
-						<?php
-						$args = array( 
-							'post_type' => 'post', 
-							'posts_per_page' => 3,
-						);
-						$loop = new WP_Query( $args );
-							while ( $loop->have_posts() ) : $loop->the_post();
-							?>
-							
-							<div class="story">
-								<h4><a href="<?php the_permalink( $post ); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a> <small><?php echo get_the_date(); ?></small></h4>
-								<p><?php the_excerpt(); ?></p>
-							</div>
 
-							<?php
-							// end while has team
-							endwhile;
-						wp_reset_query();
-						?>
-						
+					<h2>Quick Links</h2>
+					<div class="quicklink">
+					<?php if( have_rows('quick_links_nav', 'options') ): ?>
+						<ul class="links">
+
+						<?php while( have_rows('quick_links_nav', 'options') ): the_row(); 
+
+							// vars
+							$image = get_sub_field('icon');
+							$name = get_sub_field('name');
+							$link = get_sub_field('link');
+
+							?>
+
+							<li class="link">
+
+								<?php if( $link ): ?>
+								<a href="<?php echo $link; ?>">
+								<?php endif; ?>
+
+									<div class="icon" style="background-image: url(<?php echo $image; ?>);"></div>
+									<h3><?php echo $name ?></h3>
+
+								<?php if( $link ): ?>
+								</a>
+								<?php endif; ?>
+
+							</li>
+
+						<?php endwhile; ?>
+
+						</ul>
+					<?php endif; ?>
 					</div>
+
+					<h2><?php the_field( 'signup_heading', 'options' ); ?></h2>
+					<div id="mc_embed_signup" class="signup">
+						<form action="https://nsso.us14.list-manage.com/subscribe/post?u=066b92659e50d8ba35b2bed25&amp;id=1fa3fc261a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+								<div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_066b92659e50d8ba35b2bed25_1fa3fc261a" tabindex="-1" value=""></div>					    
+							    <div class="mc-field-group"><input placeholder="Enter your email to sign up" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div>
+						    	<div class="mc-button-group"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						    </div>
+						</form>
+					</div>
+					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 				</div>
 
 			</div>
@@ -100,8 +124,6 @@
 
 				<div class="copyright five columns">
 					<p>2010 — <?php echo date("Y"); ?> <?php echo bloginfo( 'name' ); ?></p>
-					<p><?php echo bloginfo( 'name' ); ?> (NSSO) is operated<br>
-					by summerschool College, registered charity no 527528</p>
 				</div>
 
 				<div class="footer-nav seven columns">

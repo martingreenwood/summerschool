@@ -9,12 +9,136 @@
 */
 
 #prefooter {
-	padding: 60px 0;
+	padding: 120px 0 60px 0;
 	background-color: $primary-color;
 	color: white;
+	overflow: hidden;
+	position: relative;
+
+	.before {
+		width: 100%;
+		position: absolute;
+		top: -2px;
+		left: -1px;
+		right: -1px;
+		z-index: 0;
+		overflow: hidden;
+		
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
 
 	h2, a {
 		color: white;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.quicklink {
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+
+		.links {
+			list-style: none;
+			margin: 0;
+
+			li {
+				margin: 0;
+				width: 22%;
+				margin-bottom: 30px;
+				vertical-align: top;
+				text-align: center;
+				display: inline-block;
+				margin-right: 1%;
+
+				@media (#{$bp-larger-than-desktop}) {
+					width: auto;
+					margin-bottom: 0;
+				}
+
+				@media (#{$bp-larger-than-desktop}) {
+					width: auto;
+					margin-bottom: 0;
+				}
+
+				a {
+					text-decoration: none;
+				}
+
+				.icon {
+					display: inline-block;
+					width: 110px;
+					height: 110px;
+					margin-bottom: 20px;
+					background-size: auto 78px;
+					background-repeat: no-repeat;
+					background-position: center;
+					border: 2px solid white;
+					border-radius: 50%;
+
+					@media (#{$bp-larger-than-desktop}) {
+						width: 140px;
+						height: 140px;
+					}
+				}
+
+				h3, {
+					display: block;
+					font-size: 20px;
+					color: white;
+				}
+
+				.outline {
+					border: 2px solid white;
+					color: white;
+					padding: 7px 15px;
+					text-transform: uppercase;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.signup {
+		display: block;
+		width: 100%;
+
+		.mc-field-group {
+			display: inline-block;
+			width: 69%;
+			float: left;
+			margin-right: 2%;
+
+			input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+				width: 100%;
+				border-color: #eeeeee;
+				border-radius: 0;
+			}
+		}
+
+		.mc-button-group {
+			display: inline-block;
+			widows: 20%;
+			float: left;
+
+			input[type="submit"], input[type="reset"], input[type="button"] {
+				widows: 100%;
+				background: $secondary-color;
+				color: white;
+				font-size: inherit;
+				border-color: $secondary-color;
+				border-radius: 0;
+
+				&:hover, &:focus, &:active {
+					background: $secondary-color;
+					color: white;
+					border-color: $secondary-color;
+				}
+			}
+		}
 	}
 
 	.company-info {
@@ -27,6 +151,24 @@
 
 		a {
 			color: white;
+		}
+
+		.sociallinks {
+
+			ul {
+
+				li {
+
+					a {
+
+						svg {
+							margin: 0;
+							padding: 0;
+							font-size: 19px;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -48,7 +190,7 @@
 #colophon {
 	font-size: 13px;
 	padding: 60px 0;
-	background-color: $secondary-color;
+	background-color: $olive-green;
 	display: block;
 	color: white;
 

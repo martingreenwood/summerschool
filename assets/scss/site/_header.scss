@@ -8,7 +8,10 @@
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
-/* This is a compiled file, you should be editing the file in the templates directory */
+.no-scroll {
+	overflow: hidden;
+}
+
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -40,7 +43,7 @@
 .pace .pace-progress {
   display: block;
   position: fixed;
-  z-index: 2000;
+  z-index: 99999;
   top: 0;
   right: 100%;
   width: 100%;
@@ -52,45 +55,59 @@
 
 
 #masthead {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 51;
-	height: 234px;
+	z-index: 1;
 	background-color: transparent;
 
-	-webkit-transition: top .5s linear 0s, background 0.5s linear 0s;
-	-moz-transition: top .5s linear 0s, background 0.5s linear 0s;
-	-ms-transition: top .5s linear 0s, background 0.5s linear 0s;
-	-o-transition: top .5s linear 0s, background 0.5s linear 0s;
-	transition: top .5s linear 0s, background 0.5s linear 0s;
+	.wide {
+		width: 100%;
+		max-width: 100%;
 
-	.logo {
-		&.small {
-			display: none;
-		}
-		&.desktop {
-			display: block;
+		.row {
+			padding: 0;
+
+			.site-branding {
+				width: 510px;
+
+				a {
+					position: absolute;
+					z-index: 2000;
+					top: 30px;
+					left: 30px;
+					width: 250px;
+				}
+			}
+
+			.main-navigation {
+				margin-top: 0;
+				width: 230px;
+
+				button {
+					right: 116px;
+					top: 67px;
+				}
+			}
 		}
 	}
 
 	&.hidden {
-		top: -234px;
+		position: fixed;
+		top: -241px;
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		z-index: 102;
+		display: block;
 		-webkit-transition: top .5s linear 0s, background 0.5s linear 0s;
 		-moz-transition: top .5s linear 0s, background 0.5s linear 0s;
 		-ms-transition: top .5s linear 0s, background 0.5s linear 0s;
 		-o-transition: top .5s linear 0s, background 0.5s linear 0s;
 		transition: top .5s linear 0s, background 0.5s linear 0s;
-	}
-
-	&.fixed {
-		position: fixed;
-		top: 0px;
-		background-color: #fff;
-		z-index: 102;
-		height: 96px;
-		display: block;
 
 		.toggled {
 			.hamburger {
@@ -110,47 +127,47 @@
 					&:hover {
 
 						a {
-							background-color: transparent;
-							border-color: black !important;
+							// background-color: transparent;
+							// border-color: black !important;
 						}
 
 						.sub-menu {
-							background-color: white;
+							// background-color: white;
 						}
 					}
 
 					a {
-						color: black;
-						border-color: black;
+						// color: black;
+						// border-color: black;
 					}
 
 					ul {
-						background: white;
+						// background: white;
 					}
 				}
 			}
 		}
 
 		.logo {
-			&.small {
-				display: block;
-			}
-			&.desktop {
-				display: none;
-			}
+			// &.small {
+			// 	display: block;
+			// }
+			// &.desktop {
+			// 	display: none;
+			// }
 		}
 
 		.row {
 			.main-navigation {
-				margin-top: 7px;
+				// margin-top: 7px;
 			}
 
 			.hamburger {
-				margin-top: 8px;
+				// margin-top: 8px;
 			}
 
 			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-				background-color: black;
+				// background-color: black;
 			}
 		}
 	}
@@ -171,42 +188,55 @@
 }
 
 #banner {
-    // min-height: 800px;
+    //min-height: 800px;
     height: 100vh;
     background: transparent;
 	position: relative;
+	overflow: hidden;
 
 	@media (#{$bp-larger-than-tablet}) {
 		height: 60vh;
 	}
 
+	.after {
+		width: 100%;
+		position: absolute;
+		bottom: -2px;
+		left: -1px;
+		right: -1px;
+		z-index: 0;
+		overflow: hidden;
+		
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
 	.blurb {
 		position: absolute;
 		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		text-align: center;
+		top: 138px;
+		z-index: 0;
 
-		.before {
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 1;
+		.row {
+			position: relative;
 		}
 
-		.after {
-			width: 100%;
+		img {
+			display: block;
+		}
+
+		.text {
 			position: absolute;
-			bottom: 0;
-			left: 0;
-			z-index: 1;
+			top: 93px;
+			left: 67px;;
 		}
 
 		h1, h2, h3, h4 {
 			color: white;
-			margin-bottom: 60px;
+			padding: 0;
+			margin-bottom: 30px;
 		}
 
 		br {
@@ -215,10 +245,6 @@
 			@media (#{$bp-larger-than-phablet}) {
 				display: block;
 			}
-		}
-
-		h2 {
-			padding: 0 30px;
 		}
 
 		a {

@@ -24,11 +24,12 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
-		<div class="container">
+		<div class="container wide">
 			<div class="row">
 
 				<div class="site-branding">
 					<div class="logo desktop">
+						<img class="top-left-splodge" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/top-left.png" alt="">
 						<?php $logo = get_field( 'logo', 'options' ); ?>
 						<a href="<?php echo home_url(); ?>">
 							<img src="<?php echo $logo['url']; ?>" alt="">
@@ -43,6 +44,7 @@
 				</div>
 
 				<nav id="site-navigation" class="main-navigation">
+					<img class="top-right-splodge" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/top-right.png" alt="">
 					<button class="hamburger menu-toggle hamburger--spin" type="button" aria-controls="primary-menu" aria-expanded="false">
 						<span class="hamburger-box ">
 							<span class="hamburger-inner"></span>
@@ -63,63 +65,56 @@
 	<?php $bannerimage = get_field( 'banner_image' ); if (!$bannerimage): $bannerimage = get_template_directory_uri() . '/assets/img/inner-bg.jpg'; else: $bannerimage = $bannerimage['url']; endif; ?>
 	<section id="banner" class="parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $bannerimage; ?>">
 		<div class="blurb">
-			<div class="before">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/top-strip.png" alt="">
-			</div>
-			<div class="table">
-				<div class="cell middle">
+			<div class="container">
+				<div class="row">
+					<div class="columns seven">
+			
+					<?php if ( is_home() || is_front_page() ): ?>
 
-				<?php if (is_page(get_option( 'page_for_posts' ))): ?>
-					
+						<img class="home-blurb-splodge" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/home-blurb-bg.png" alt="">
+						<div class="text home-page-text">
+							<?php if (get_field( 'banner_text' )): ?>
+							<h2><?php the_field( 'banner_text' ); ?></h2>
+							<?php endif; ?>
+							<?php if (get_field( 'banner_link' )): ?>
+							<a href="<?php the_field( 'banner_link' ); ?>" title="Find out more">Find out more</a>
+							<?php endif; ?>
+						</div>
 
-					<?php if (get_field( 'banner_text', get_option( 'page_for_posts' ) )): ?>
-					<h2><?php the_field( 'banner_text', get_option( 'page_for_posts' ) ); ?></h2>
-					<?php endif; ?>
-					<?php if (get_field( 'banner_link', get_option( 'page_for_posts' ) )): ?>
-					<a href="<?php the_field( 'banner_link', get_option( 'page_for_posts' ) ); ?>" title="Find out more">Find out more</a>
-					<?php endif; ?>
+					<?php elseif (is_page( 'account' )): ?>
 
-				<?php elseif (is_page( 'account' )): ?>
-					
+					<?php elseif ( is_404() ): ?>
 
-					<?php
-					  if ( has_wp_user_avatar(get_current_user_id()) ) {
-					    echo get_wp_user_avatar(get_current_user_id(), 96);
-					  }
-					?>
+						<img class="inner-blurb-splodge" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/home-blurb-bg.png" alt="">
+						<div class="text 404-page-text">
+							<h1>404</h1>
+							<h2>Page Not Found</h2>
+						</div>
 
-					<?php $user_info = get_userdata(get_current_user_id()); ?>
-					<h1><?php echo $user_info->first_name .  " " . $user_info->last_name; ?></h1>
-					<?php if (get_field( 'banner_text' )): ?>
-					<h2><?php the_field( 'banner_text' ); ?></h2>
-					<?php endif; ?>
+					<?php else: ?>
 
+						<img class="inner-blurb-splodge" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/inner-blurb-bg.png" alt="">
+						<div class="text default-page-text">
+							<?php if (get_field( 'banner_text' )): ?>
+							<h2><?php the_field( 'banner_text' ); ?></h2>
+							<?php endif; ?>
+							<?php if (get_field( 'banner_link' )): ?>
+							<a href="<?php the_field( 'banner_link' ); ?>" title="Find out more">Find out more</a>
+							<?php endif; ?>
+						</div>
 
-				<?php elseif ( is_404() ): ?>
+					<?php endif ?>
+					</div>
 
-					<h1>404</h1>
-					<h2>Page Not Found</h2>
-
-				<?php else: ?>
-
-					<?php if (get_field( 'banner_text' )): ?>
-					<h2><?php the_field( 'banner_text' ); ?></h2>
-					<?php endif; ?>
-					<?php if (get_field( 'banner_link' )): ?>
-					<a href="<?php the_field( 'banner_link' ); ?>" title="Find out more">Find out more</a>
-					<?php endif; ?>
-
-				<?php endif ?>
-					
 				</div>
 			</div>
-			<div class="after">
-			<?php if (is_front_page()): ?>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bottom-strip-home.png" alt="">
+		</div>
+		<div class="after">
+			<?php if ( is_home() || is_front_page() ): ?>
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/home-splash-left.gif" alt="Light Green brush stroke">
 			<?php else: ?>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bottom-strip.png" alt="">
-			<?php endif; ?>
-			</div>
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/splash-right.gif" alt="Light Green brush stroke">
+			<?php endif ?>
 		</div>
 	</section>
 

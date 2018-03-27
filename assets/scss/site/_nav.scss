@@ -81,8 +81,6 @@
 		border-radius: 0;
 		height: inherit;
 		position: absolute;
-		right: 0;
-		bottom: 30px;
 		z-index: 99;
 
 		.hamburger-box {
@@ -90,19 +88,19 @@
 		}
 	}
 
-	@media (#{$bp-larger-than-desktophd}) {
-		.menu-toggle {
-			display: none;
-		}
+	// @media (#{$bp-larger-than-desktophd}) {
+	// 	.menu-toggle {
+	// 		display: none;
+	// 	}
 
-		.menu-primary-container {
-			display: block;
-		}
-	}
+	// 	.menu-primary-container {
+	// 		display: block;
+	// 	}
+	// }
 
 	&.toggled {
 		.hamburger {
-			bottom: 36px;
+			// bottom: 36px;
 
 			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
 				background-color: white;
