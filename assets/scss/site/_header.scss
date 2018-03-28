@@ -61,29 +61,47 @@
 	top: 0;
 	z-index: 1;
 	background-color: transparent;
+	overflow: hidden;
 
 	.wide {
 		width: 100%;
 		max-width: 100%;
+		padding: 0;
 
 		.row {
 			padding: 0;
 
 			.site-branding {
-				width: 510px;
+				width: 100%;
+
+				@media (#{$bp-larger-than-tablet}) {
+					width: 510px;
+				}
 
 				a {
 					position: absolute;
 					z-index: 2000;
 					top: 30px;
 					left: 30px;
-					width: 250px;
+					width: 186px;
+
+					@media (#{$bp-larger-than-tablet}) {
+						width: 250px;
+					}
 				}
 			}
 
 			.main-navigation {
 				margin-top: 0;
 				width: 230px;
+
+				position: absolute;
+				right: -90px;
+
+				@media (#{$bp-larger-than-tablet}) {
+					position: relative;
+					right: auto;
+				}
 
 				button {
 					right: 116px;
@@ -189,7 +207,7 @@
 
 #banner {
     //min-height: 800px;
-    height: 100vh;
+    height: 80vh;
     background: transparent;
 	position: relative;
 	overflow: hidden;
@@ -201,12 +219,12 @@
 	.after {
 		width: 100%;
 		position: absolute;
-		bottom: -2px;
-		left: -1px;
-		right: -1px;
+		bottom: -1px;
+		left: 0;
+		right: 0;
 		z-index: 0;
 		overflow: hidden;
-		
+				
 		img {
 			width: 100%;
 			display: block;
@@ -225,12 +243,22 @@
 
 		img {
 			display: block;
+			width: 100%;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: 620px;
+			}
 		}
 
 		.text {
 			position: absolute;
-			top: 93px;
-			left: 67px;;
+			top: 43px;
+			left: 47px;
+
+			@media (#{$bp-larger-than-tablet}) {
+				top: 93px;
+				left: 67px;
+			}
 		}
 
 		h1, h2, h3, h4 {

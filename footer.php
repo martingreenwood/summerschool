@@ -15,7 +15,7 @@
 
 	<section id="prefooter">
 		<div class="before">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/splash-bottom.gif" alt="Light Green brush stroke">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/home-splash-bottom-new.png" alt="Light Green brush stroke">
 		</div>
 
 		<div class="container">

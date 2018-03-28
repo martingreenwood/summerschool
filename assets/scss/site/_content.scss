@@ -206,7 +206,7 @@
 	input.mepr-submit {
 		display: inline-block;
 		color: white;
-		background-color: #784987;
+		background-color: $primary-color;
 		border-radius: 0px;
 		border: none;
 		font-size: inherit;
@@ -398,6 +398,10 @@
 			border-radius: 0;
 		}
 
+		.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+			margin-top: 0;
+		}
+
 		.gform_wrapper {
 			background: white;
 			padding: 40px;
@@ -495,7 +499,7 @@
 				input[type="submit"], input[type="reset"], input[type="button"] {
 					display: inline-block;
 					color: white;
-					background-color: #784987;
+					background-color: $primary-color;
 					border-radius: 0px;
 					border: none;
 
@@ -716,7 +720,7 @@
 			input[type="submit"], input[type="reset"], input[type="button"] {
 				display: inline-block;
 				color: white;
-				background-color: #784987;
+				background-color: $primary-color;
 				border-radius: 0px;
 				border: none;
 
@@ -753,7 +757,7 @@
 		width: 100%;
 
 		a {
-			background: #4a3c77;
+			background: $primary-color;
 			color: white;
 			font-size: inherit;
 			border: 0;
@@ -984,7 +988,7 @@
 				input[type="submit"], input[type="reset"], input[type="button"] {
 					display: inline-block;
 					color: white;
-					background-color: #784987;
+					background-color: $primary-color;
 					border-radius: 0px;
 					border: none;
 

@@ -16,10 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class($pagename); ?>>
 <div id="page" class="site">
 
@@ -67,7 +65,7 @@
 		<div class="blurb">
 			<div class="container">
 				<div class="row">
-					<div class="columns seven">
+					<div class="columns twelve">
 			
 					<?php if ( is_home() || is_front_page() ): ?>
 
@@ -111,9 +109,9 @@
 		</div>
 		<div class="after">
 			<?php if ( is_home() || is_front_page() ): ?>
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/home-splash-left.gif" alt="Light Green brush stroke">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/home-splash-left-new.png" alt="Light Green brush stroke">
 			<?php else: ?>
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/splash-right.gif" alt="Light Green brush stroke">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/home-splash-right-new.png" alt="Light Green brush stroke">
 			<?php endif ?>
 		</div>
 	</section>
