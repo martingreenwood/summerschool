@@ -7,7 +7,7 @@
 		"uuidString": "5D91B198-5421-47A9-B7CB-A2A2AE977F58"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitattributes": {
 		"cB": 0,
@@ -214,6 +214,7 @@
 	"\/assets\/img\/aljw-signature.jpg": {
 		"ft": 16384,
 		"iS": 2015,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/aljw-signature.jpg",
 		"oF": 0,
@@ -224,6 +225,7 @@
 	"\/assets\/img\/allan-feature-pod.jpg": {
 		"ft": 16384,
 		"iS": 20219,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/allan-feature-pod.jpg",
 		"oF": 0,
@@ -288,6 +290,7 @@
 	"\/assets\/img\/inner-bg.jpg": {
 		"ft": 16384,
 		"iS": 1845256,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/inner-bg.jpg",
 		"oF": 0,
@@ -2122,7 +2125,8 @@
 	"creationDate": 537198434,
 	"displayValue": "summerschool",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-yesBaby"
+	"iconImageName": "meme-yesBaby",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3925,6 +3929,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

@@ -1153,7 +1153,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #prefooter .quicklink .links { list-style: none; margin: 0; }
 
-#prefooter .quicklink .links li { margin: 0; width: 22%; margin-bottom: 30px; vertical-align: top; text-align: center; display: inline-block; margin-right: 1%; }
+#prefooter .quicklink .links li { margin: 0; width: 35%; margin-bottom: 30px; vertical-align: top; text-align: center; display: inline-block; margin-right: 1%; }
 
 @media (min-width: 1160px) { #prefooter .quicklink .links li { width: auto; margin-bottom: 0; } }
 

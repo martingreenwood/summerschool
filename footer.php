@@ -28,6 +28,7 @@
 
 					<?php the_field( 'company_info', 'options' ); ?>
 
+					<?php /*
 					<div class="sociallinks">
 						<ul>
 							<?php if (get_field( 'facebook', 'options' )): ?>
@@ -59,6 +60,7 @@
 							<?php endif; ?>
 						</ul>
 					</div>
+					*/ ?>
 					
 				</div>
 
