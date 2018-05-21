@@ -746,6 +746,14 @@
 
 .account {
 
+	.maincopy {
+		text-align: center;
+	}
+
+	div#member-assets-form {
+		margin-bottom: 3rem;
+	}
+
 	a.button {
 		background: $primary-color;
 		color: white;
@@ -770,6 +778,8 @@
 			font-size: inherit;
 			border: 0;
 			border-radius: 0;
+			height: 48px;
+			line-height: 48px;
 		}
 	}
 

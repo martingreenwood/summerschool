@@ -1046,13 +1046,17 @@ th:last-child, td:last-child { padding-right: 0; }
 /*===============================
 =            Account            =
 ===============================*/
+.account .maincopy { text-align: center; }
+
+.account div#member-assets-form { margin-bottom: 3rem; }
+
 .account a.button { background: #223031; color: white; font-size: inherit; border: 0; border-radius: 0; float: right; }
 
 .account .gv-right { text-align: left; }
 
 .account .btnhlder { text-align: right; display: table; width: 100%; }
 
-.account .btnhlder a { background: #223031; color: white; font-size: inherit; border: 0; border-radius: 0; }
+.account .btnhlder a { background: #223031; color: white; font-size: inherit; border: 0; border-radius: 0; height: 48px; line-height: 48px; }
 
 .account .gv-section { color: #223031; margin-bottom: 5px !important; margin-top: 20px !important; }
 
