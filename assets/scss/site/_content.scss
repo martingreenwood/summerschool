@@ -402,6 +402,10 @@
 			margin-top: 0;
 		}
 
+		.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+			width: calc(100% - 2px);
+		}
+
 		.gform_wrapper {
 			background: white;
 			padding: 40px;
@@ -437,6 +441,7 @@
 				font-family: inherit;
 				padding: 7px 12px;
 				letter-spacing: normal;
+				width: calc(100% - 2px);
 			}
 
 			input[type='email'], input[type='number'], input[type='search'], input[type='text'], input[type='tel'], input[type='url'], input[type='password'], textarea, select {
@@ -448,6 +453,7 @@
 				box-shadow: none;
 				box-sizing: border-box;
 				height: auto;
+				width: calc(100% - 2px);
 			}
 
 			select {
@@ -471,7 +477,9 @@
 				li.gfield {
 					margin-top: 0;
 					padding-top: 0;
+					padding-right: 0;
 					margin-bottom: 40px;
+					width: 100%;
 				}
 			}
 
