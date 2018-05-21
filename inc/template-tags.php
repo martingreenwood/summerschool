@@ -664,7 +664,7 @@ function add_last_nav_item($items, $args) {
 	if( $args->theme_location == 'menu-1') {
     
 		if (is_user_logged_in()) {
-			$homelink = '<a href="'. home_url( '/account' ) .'" title="my Account">My Account</a>';
+			$homelink = '<a href="'. home_url( '/account?action=subscriptions' ) .'" title="my Account">My Account</a>';
 		} else {
 			$homelink = '<a href="'. home_url( '/login' ) .'" title="my Account">Login</a>';
 		}
