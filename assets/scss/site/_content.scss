@@ -223,6 +223,21 @@
 
 .page {
 
+	.cookie-bar-block {
+
+		#catapult-cookie-bar h3 {
+			margin: 0;
+			text-transform: uppercase;
+			font-size: 3rem;
+		}
+
+		#catapultCookie {
+			line-height: 1;
+			display: block;
+			width: 100%;
+		}
+	}
+
 	article {
 		text-align: center;
 
