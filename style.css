@@ -1066,7 +1066,13 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account .gv-field-label { padding-right: 5px; font-weight: bold; }
 
-.account .gv-list-view-footer { border-top: 0px solid #ddd; background-color: #f9f9f9; padding: 10px 20px 20px 20px; }
+.account .gv-list-container { margin-bottom: 20px; }
+
+.account .gv-grid-col-1-2 { width: 50%; float: left; text-align: left; font-size: 15px; padding-right: 20px; box-sizing: border-box; }
+
+.account .gv-grid-col-1-2 .gv-section { color: #223031; margin-bottom: 15px !important; margin-top: 15px !important; border-bottom: 1px solid #ccc; padding-bottom: 5px; font-size: 17px; }
+
+.account .gv-grid-col-1-2 h4 { font-size: inherit; margin: 10px 0; }
 
 .account .mp_wrapper table.mepr-account-table td { border-bottom: 1px solid #dddddd; }
 
@@ -1106,7 +1112,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account #member-assets-form .index ul li .name a { text-decoration: none; }
 
-.account #personal-information-form { background: white; padding: 40px; margin: 40px 0 0 0; }
+.account #personal-information-form { background: #f0f0f0; padding: 40px; margin: 40px 0 0 0; }
 
 .account #personal-information-form .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }
 
