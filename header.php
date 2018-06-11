@@ -79,7 +79,18 @@
 							<?php endif; ?>
 						</div>
 
-					<?php elseif (is_page( 'account' )): ?>
+					<?php elseif (is_page( 'account' )): ?>>
+
+					<?php elseif (is_page( 'login' )): ?>
+
+						<img class="inner-blurb-splodge" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/home-blurb-bg.png" alt="">
+						<div class="text 404-page-text">
+						<?php if ($_GET['action'] == 'forgot_password'): ?>
+							<h1>Reset your password</h1>
+						<?php else: ?>
+							<h1>Login to your account</h1>
+						<?php endif; ?>
+						</div>
 
 					<?php elseif ( is_404() ): ?>
 
